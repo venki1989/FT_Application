@@ -5,7 +5,6 @@ import java.time.Duration;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.qa.ft.base.BaseTest;
-import com.qa.ft.factory.DriverFactory;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
