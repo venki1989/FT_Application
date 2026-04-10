@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.qa.ft.listeners.ExtentReportListener"/>
+    <listener class-name="com.qa.ft.listeners.TestAllureListener"/>
+    <listener class-name="com.qa.ft.listeners.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="4" parallel="tests" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.qa.ft.tests.HomePageTest">
+        <methods>
+          <include name="clickglobalText"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="pdmspageSetup"/>
+        </methods>
+      </class> <!-- com.qa.ft.tests.HomePageTest -->
+      <class name="com.qa.ft.tests.LoginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="doLogin"/>
+        </methods>
+      </class> <!-- com.qa.ft.tests.LoginPageTest -->
+      <class name="com.qa.ft.tests.PDMSPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="viewlogo"/>
+          <include name="pdmspageformSetup"/>
+        </methods>
+      </class> <!-- com.qa.ft.tests.PDMSPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

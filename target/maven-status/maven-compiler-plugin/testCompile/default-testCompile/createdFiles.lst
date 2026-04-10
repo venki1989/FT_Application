@@ -1,0 +1,4 @@
+com\qa\ft\base\BaseTest.class
+com\qa\ft\tests\PDMSPageTest.class
+com\qa\ft\tests\LoginPageTest.class
+com\qa\ft\tests\HomePageTest.class
